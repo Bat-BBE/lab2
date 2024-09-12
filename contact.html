@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Холбоо барих</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #034e81;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f5f7f8;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .content img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Холбоо барих</h1>
+    <header>
+        <h1>Холбоо барих</h1>
+    </header>
 
     <nav>
         <a href="lab2.html">Нүүр хуудас</a>
@@ -15,10 +97,18 @@
         <a href="contact.html">Холбоо барих</a>
     </nav>
 
-    <img src="OIP (2).jpg" alt="Гэр бүл" width="600" height="400">
+    <div class="content">
+        <img src="OIP (2).jpg" alt="Гэр бүл">
 
-    <p>Та надтай baterdenebatbayr321@gmail.com хаягаар болон 86550908 утсаар холбогдож болно. Би гэхдээ нээх их хүнтэй холбогдох дургүй учир та нээх их залгаж майл бичээд хэрэггүй байх гэж бодож байна. Баярлалаа :) </p>
+        <p>Та надтай доорх хаяг болон утсаар холбогдож болно. Гэхдээ би нээх их хүнтэй холбогдох дургүй учир та нээх их залгаж, имэйл бичээд хэрэггүй байх гэж бодож байна. Баярлалаа :)</p>
+
+        <div class="contact-info">
+            📧 Email: baterdenebatbayr321@gmail.com<br>
+            📞 Утас: 86550908
+        </div>
+    </div>
 
 </body>
 </html>
+
 

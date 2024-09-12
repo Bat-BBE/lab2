@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Миний гэр бүл</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4c4faf;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f8eef0;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .content img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Миний гэр бүл</h1>
+    <header>
+        <h1>Миний гэр бүл</h1>
+    </header>
 
     <nav>
         <a href="lab2.html">Нүүр хуудас</a>
@@ -15,9 +87,12 @@
         <a href="contact.html">Холбоо барих</a>
     </nav>
 
-    <img src="image.png" alt="Гэр бүл" width="600" height="400">
+    <div class="content">
+        <img src="image.png" alt="Гэр бүл">
 
-    <p>Манай гэр бүл нь ам бүл 5-уул юм. Би нэг дүү нэг ахтай. Манайхан бүгд л өөр өөрийн гэсэн хийдэг ажилтай бөгөөд хоорондоо тийм олон цаг хамт байдаггүй. Энэ нь мэдээж манай гэр бүл гэлтгүй улаанбаатар хотын бүх гэр бүлүүд ийм байдаг байх. Ажил хийх нь хийж хичээл ном хийх нь хийж шоу цэнгээнд явах нь явдаг сонгодог төрлийн гэр бүл юм.</p>
+        <p>Манай гэр бүл нь ам бүл 5-уул юм. Би нэг дүү нэг ахтай. Манайхан бүгд л өөр өөрийн гэсэн хийдэг ажилтай бөгөөд хоорондоо тийм олон цаг хамт байдаггүй. Энэ нь мэдээж манай гэр бүл гэлтгүй Улаанбаатар хотын бүх гэр бүлүүд ийм байдаг байх. Ажил хийх нь хийж, хичээл ном хийх нь хийж, шоу цэнгээнд явах нь явдаг сонгодог төрлийн гэр бүл юм.</p>
+    </div>
 
 </body>
 </html>
+
