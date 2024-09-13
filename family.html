@@ -1,72 +1,126 @@
 <!DOCTYPE html>
-<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <title>Welcome Lab2</title>
     <style>
-        body {
-            background-color: rgb(17, 93, 186);
-            color: #00FF00;
+        html, body {
+            height: 100%;
+            background-color: #0a0a0a;
+            color: #fff;
         }
-
-        header h1 {
-            color: #FFD700;
-            text-shadow: 2px 2px #FF4500;
-            margin: 10px 0;
+        table {
+            margin: 20px auto;
+            width: 90%;
+            height: 90%;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            background: linear-gradient(145deg, #333, #222);
         }
-
         th, td {
-            border: 1px solid #00FF00;
-            padding: 10px;
+            padding: 15px;
         }
-
         th {
-            background-color: #00008B;
-            color: #FFFFFF;
+            background-color: #111;
+            color: #ffee00;
+            text-align: center;
         }
-
-        a {
-            color: #f6ff00;
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ffee00;
+            text-shadow: 2px 2px 5px #d61938;
+        }
+        tfoot td {
+            padding: 10px;
+            background-color: #222;
+            color: #e3c70d;
             font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
         }
-        p {
-            max-width: 800px;
+        a {
+            color: #ffee00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .content {
+            text-align: center;
+        }
+        .content img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin: 10px 20px;
+        }
+        .nav-table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-table a {
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #333;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome Lab2</h1>
-    </header>
-
-    <table class="nav-table">
-        <tr>
-            <td><a href="lab2.html">Нүүр хуудас</a></td>
-        </tr>
-        <tr>
-            <td><a href="about.html">Миний тухай</a></td>
-        </tr>
-        <tr>
-            <td><a href="family.html">Миний гэр бүл</a></td>
-        </tr>
-        <tr>
-            <td><a href="friends.html">Найзууд</a></td>
-        </tr>
-        <tr>
-            <td><a href="contact.html">Холбоо барих</a></td> 
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <header>
+                        <h1>Welcome Lab2 - Миний гэр бүл</h1>
+                    </header>  
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 30%;">
+                    <table class="nav-table">
+                        <tr>
+                            <td><a href="lab2.html">Нүүр хуудас</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="about.html">Миний тухай</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="family.html">Миний гэр бүл</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="friends.html">Найзууд</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="contact.html">Холбоо барих</a></td> 
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="content">
+                        <img src="image.png" alt="Гэр бүл"width="400" height="300">
+                        <p>Манай гэр бүл нь ам бүл 5-уул юм. Би нэг дүү нэг ахтай. Манайхан бүгд л өөр өөрийн гэсэн хийдэг ажилтай бөгөөд хоорондоо тийм олон цаг хамт байдаггүй. Энэ нь мэдээж манай гэр бүл гэлтгүй Улаанбаатар хотын бүх гэр бүлүүд ийм байдаг байх. Ажил хийх нь хийж, хичээл ном хийх нь хийж, шоу цэнгээнд явах нь явдаг сонгодог төрлийн гэр бүл юм.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <a href="https://www.facebook.com/profile.php?id=100058873272618" target="_blank">Миний ах</a><br>
+                    <a href="https://www.facebook.com/profile.php?id=100014752185835" target="_blank">Миний ээж</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Анхаарал хандуулсанд баярлалаа. Дараа дахин зочлоорой.</td>
+            </tr>
+        </tfoot>
     </table>
-    <header>
-        <h1>Миний гэр бүл</h1>
-    </header>
-
-    <div class="content">
-        <img src="image.png" alt="Гэр бүл"width="400" height="300">
-
-        <p>Манай гэр бүл нь ам бүл 5-уул юм. Би нэг дүү нэг ахтай. Манайхан бүгд л өөр өөрийн гэсэн хийдэг ажилтай бөгөөд хоорондоо тийм олон цаг хамт байдаггүй. Энэ нь мэдээж манай гэр бүл гэлтгүй Улаанбаатар хотын бүх гэр бүлүүд ийм байдаг байх. Ажил хийх нь хийж, хичээл ном хийх нь хийж, шоу цэнгээнд явах нь явдаг сонгодог төрлийн гэр бүл юм.</p>
-    </div>
-
 </body>
 </html>
-
